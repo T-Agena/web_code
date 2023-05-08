@@ -19,7 +19,25 @@ p {
 
 }
 
+.section_title{
+  /* フォントサイズ */
+  font-size: 36px;
+  /* フォントの太さ。標準は400 */
+  font-weight: 600;
+}
 
+.section_title::after{
+  /* 疑似要素はデフォルトでインライン要素のためブロック要素に変更 */
+  display: block;
+
+  /* サブタイトル文字の大きさや余白を設定 */
+  font-size: 14px;
+  font-weight: 400;
+  padding: 16px 0 ;
+  width: 100px;
+  /* 下線を直線1pixel黒色に設定 */
+  border-bottom: solid 1px #000000;
+}
 
 /* ----------------------------------------------- ナビゲーションバー */
 .navbar_brand_logo{
@@ -57,6 +75,8 @@ p {
   display: none;
 }
 
+
+/* ----------------------------------------------- カールセル */
 .my_carousel_caption{
   font-size: 52px;
   margin: 1.25rem 0;
@@ -88,15 +108,15 @@ p {
   min-width: 100%;
   height: 32rem;
 }
-/* ----------------------------------------------- カールセル */
-
-
-
-
 
 /* ----------------------------------------------- アバウト */
+.about::after{
+  content: "私たちについて";
+}
 
-
+.about_us_bg{
+  background-color: #ffe6a5;
+}
 
 
 

@@ -151,9 +151,42 @@ p {
 
 
 /* ----------------------------------------------- レビュー */
+.review_wrapper{
+  background-image: url(../img/background-reviews.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.review::after{
+  content: "お客様の声";
+  margin: 0 auto;
+  border-bottom: solid 1px #ffffff;
+}
 
+.h_420{
+  height: 420px;
+  position: relative;
+}
 
+.reviewer_img{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.star_img{
+  width: 25px;
+  height: 25px;
+}
+
+.fix_bottom{
+  position: absolute;
+  width: 80px;
+  height: 44px;
+  left: 24px;
+  bottom: 24px;
+}
 
 
 /* ----------------------------------------------- アクセス */

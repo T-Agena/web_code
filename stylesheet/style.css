@@ -130,7 +130,22 @@ p {
 
 
 /* ----------------------------------------------- メニュー */
+.menu::after{
+  content:"メニュー";
+  margin: 0 auto;
+}
 
+.menu_title{
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.menu_price{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Lira', serif;
+}
 
 
 

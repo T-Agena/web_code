@@ -82,14 +82,90 @@
       </div>
     </nav>
     <!-- ************************************************ ナビゲーションバー終了 -->
-
+    
     <!-- ************************************************ カルーセル開始 -->
+    <!-- idのmyCarouselはインジゲーター部分のdata-bs-targetと紐づく必要がある。mb-5で下方向に余白追加 -->
+    <div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+      <!-- インジゲーター部分 -->
+      <ol class="carousel-indicators">
+        <!-- この個所と前述のidは紐づいている。 -->
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      </ol>
 
+      <!-- carousel-innner: カルーセルのキャプションと背景画像の部分。現在は1枚目だけを表示。 -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slider-1.jpg" alt="SAMURAI KITTCHEN-1">
+          <div class="carousel-caption">
+            <h1 class="my_carousel_caption">
+              Welcome to<br>
+              SAMURAI KITCHEN
+            </h1>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/slider-2.jpg" alt="サンプル画像">
+          <div class="carousel-caption">
+            <h1 class="my_carousel_caption">
+              The fabulous commbination of&nbsp;wine&nbsp;and&nbsp;food
+            </h1>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/slider-3.jpg" alt="サンプル画像">
+          <div class="carousel-caption">
+            <h1 class="my_carousel_caption">
+              Get the Italian taste<br>
+              at the SAMURAI&nbsp;KITTCHEN
+            </h1>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- コントロールボタン左側 -->
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+
+      <!-- コントロールボタン右側 -->
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
     <!-- ************************************************ カルーセル終了 -->
 
     <!-- ************************************************ アバウトセクション開始 -->
     <section id="about">
+      <div class="container py--5 mb-5">
+        
+        <div class="row">
+          <div class="col-lg-6 text-left">
+            <div class="py-5">
+              <h2 class="mb-5">ABOUT US</h2>
+              <p class="mb-2">
+                本場イタリアンの味を追求し、厳選した国産食材を使用。<br>
+                オーガニック野菜、熟成させた自家製プロシュート、<br>
+                毎朝仕込むピザ生地など、あらゆる食材へのこだわり。<br>
+              </p>
+              <p class="mb-2">
+                イタリアのワインの名産地「ピエモンテ州」「ヴェネト州」で生産された<br>
+                ワインを取り揃え、上品な味わいをお愉しみいただけます。<br>
+              </p>
+            </div>
+          </div>
 
+          <div class="col-lg-6">
+            <img src="img/img-about-us.png" alt="pizza">
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ************************************************ アバウトセクション終了 -->
 

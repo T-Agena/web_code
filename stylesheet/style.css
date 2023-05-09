@@ -74,8 +74,6 @@ p {
 #hamburger_btn_check{
   display: none;
 }
-
-
 /* ----------------------------------------------- カールセル */
 .my_carousel_caption{
   font-size: 52px;
@@ -117,18 +115,11 @@ p {
 .about_us_bg{
   background-color: #ffe6a5;
 }
-
-
-
 /* ----------------------------------------------- ギャラリー */
 .gallery::after{
   content: "ギャラリー";
   margin: 0 auto;
 }
-
-
-
-
 /* ----------------------------------------------- メニュー */
 .menu::after{
   content:"メニュー";
@@ -146,10 +137,6 @@ p {
   font-weight: 400;
   font-family: 'Lira', serif;
 }
-
-
-
-
 /* ----------------------------------------------- レビュー */
 .review_wrapper{
   background-image: url(../img/background-reviews.jpg);
@@ -187,15 +174,74 @@ p {
   left: 24px;
   bottom: 24px;
 }
-
-
 /* ----------------------------------------------- アクセス */
 .access::after{
   content: "アクセス";
   margin: 0 auto;
 }
-
-
-
-
 /* ----------------------------------------------- フッター */
+#footer{
+  background-color: #fafafa;
+}
+
+.copy_right{
+  font-size: 14px;
+  position: absolute;
+  bottom: 1rem;
+  left: 12px;
+  display: flex;
+}
+
+.copy_right>p{
+  margin-right: 5rem;
+  margin-bottom: 0;
+}
+
+.copy_right>img.sns_img{
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.restaurant_info p{
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.restaurant_info img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  line-height: 1.5;
+  margin-top: auto;
+}
+
+.footer_brand_logo{
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer_text{
+  font-size: 24px;
+  font-family: 'Lora', serif;
+}
+
+@media screen and (max-width: 991px){
+  .footer_text,
+  .copy_right{
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .copy_right>p,img{
+    margin-right: 1rem;
+    font-size: 14px;
+    margin: 0;
+    line-height: 35px;
+  }
+}
